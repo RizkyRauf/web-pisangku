@@ -87,7 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <meta
           name="google-site-verification"
-          content={process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || ""}
+          content="googleac25364782827d66"
         />
       </head>
       <body className="min-h-full flex flex-col font-sans antialiased">{children}</body>
