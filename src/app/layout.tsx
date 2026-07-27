@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 
 const siteUrl = process.env.NEXT_PUBLIC_DOMAIN
   ? `https://${process.env.NEXT_PUBLIC_DOMAIN}`
-  : "https://pisangijohasanuddin.com"
+  : "https://pisangijohasanuddin.vercel.app"
 
 export const metadata: Metadata = {
   title: `${business.name} | ${business.tagline}`,
