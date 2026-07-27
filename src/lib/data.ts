@@ -53,7 +53,7 @@ export const business: BusinessInfo = {
   tiktok: "https://www.tiktok.com/@pisangijo.hasanuddin",
   threads: "https://www.threads.net/@pisangijo.hasanuddin",
   googleMapsEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1!2d106.8085666!3d-6.3552124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efea08b93bf7%3A0x7e4217f4738d1377!2sPisang%20Ijo%20Hasanuddin!5e0!3m2!1sid!2sid!4v1",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2998885350257!2d106.80856659999999!3d-6.3552124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efea08b93bf7%3A0x7e4217f4738d1377!2sPisang%20Ijo%20Hasanuddin!5e0!3m2!1sen!2sid!4v1785176370888!5m2!1sen!2sid",
   googleMapsUrl:
     "https://www.google.com/maps/place/Pisang+Ijo+Hasanuddin/@-6.3552124,106.8085666,1069m/",
   hours: [
