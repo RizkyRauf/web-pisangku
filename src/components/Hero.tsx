@@ -60,7 +60,7 @@ export default function Hero() {
               <div className="absolute inset-4 rounded-[1.5rem] bg-gradient-to-br from-primary/15 via-white to-accent/10 -rotate-3" />
               <div className="relative flex h-full w-full items-center justify-center rounded-[1.5rem] bg-white shadow-2xl shadow-primary/10 border border-gray-100 overflow-hidden">
                 <Image
-                  src="https://instagram.fcgk12-1.fna.fbcdn.net/v/t51.75761-15/483209184_17964913160853866_3261347033569734141_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=103&amp;ig_cache_key=MzU4MjA3ODIzMjgxODQ3NjQ3Mw%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTAzNS5zZHIucmVndWxhcl9waG90by5DMyJ9&amp;_nc_ohc=knX0xDRxIrcQ7kNvwGM6T_X&amp;_nc_oc=AdpMYuj3DXTP591bdejZFHxpWQwsK8qhBZvPXQYBdo0VikB-DGQW5zy2GwvHawmliDU&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=instagram.fcgk12-1.fna&amp;_nc_gid=kUEqfnlRImVapWCTL6hWlg&amp;_nc_ss=7a22e&amp;oh=00_AQA4LBu2jr8SFKt9eVliz5cVxPuw5T79DpyolkXkr77udw&amp;oe=6A6CD5D9"
+                  src="/images/menu_pisang_ijo.jpg"
                   alt="Pisang Ijo Hasanuddin — pisang ijo khas Makassar asli di Jakarta Selatan"
                   fill
                   className="object-cover"
