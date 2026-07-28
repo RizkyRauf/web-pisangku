@@ -44,9 +44,9 @@ export const business: BusinessInfo = {
     "Pisang Ijo Hasanuddin menghadirkan cita rasa autentik pisang ijo khas Makassar di Jakarta Selatan. Dibuat dari bahan premium dengan resep turun-temurun, setiap sajian kami buat dengan penuh cinta. Nikmati pisang ijo legit dan dadar kacang fla homemade yang lembut — cocok untuk cemilan keluarga atau hadiah oleh-oleh khas Makassar.",
   address:
     "Jl. Kavling-Komplek DKI.99 6, RT.5/RW.3, Cipedak, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630",
-  phone: "0812-9259-4660",
+  phone: "0812-4220-0089",
   whatsapp:
-    "https://wa.me/6281292594660?text=Halo,%20saya%20mau%20pesan%20pisang%20ijo",
+    "https://wa.me/6281242200089?text=Halo,%20saya%20mau%20pesan%20pisang%20ijo",
   whatsappText: "Halo, saya mau pesan pisang ijo",
   email: "{ /* TODO: email */ }",
   instagram: "https://www.instagram.com/pisangijo.hasanuddin/",
