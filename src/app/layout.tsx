@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: "/public/vercel.svg",
+        url: "/images/menu_pisang_ijo.jpg",
         width: 1200,
         height: 900,
-        alt: "Pisang Ijo Hasanuddin",
+        alt: "Pisang Ijo Hasanuddin — pisang ijo khas Makassar asli",
       },
     ],
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: `${business.name} | ${business.tagline}`,
     description:
       "Pisang Ijo khas Makassar asli di Jakarta Selatan. Pesan via WhatsApp.",
-    images: ["/images/pisang.jpeg"],
+    images: ["/images/menu_pisang_ijo.jpg"],
   },
   robots: {
     index: true,
