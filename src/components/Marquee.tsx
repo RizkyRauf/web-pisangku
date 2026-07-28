@@ -1,12 +1,10 @@
 const categories = [
   "Pisang Ijo Original",
-  "Pisang Ijo Pandan",
   "Es Pisang Ijo",
   "Pisang Ijo Coklat",
   "Pisang Ijo Durian",
   "Pisang Ijo Keju",
   "Pisang Ijo Original",
-  "Pisang Ijo Pandan",
   "Es Pisang Ijo",
   "Pisang Ijo Coklat",
   "Pisang Ijo Durian",
