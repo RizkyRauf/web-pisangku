@@ -72,14 +72,14 @@ export const business: BusinessInfo = {
     {
       name: "Pisang Ijo",
       description: "Pisang dibalut adonan legit, disiram dengan fla",
-      price: "-",
+      price: "Rp20.000",
       image: "/images/menu_pisang_ijo.jpg",
       alt: "Pisang Ijo Hasanuddin — pisang dibalut adonan legit khas Makassar disiram fla",
     },
     {
       name: "Dadar Kacang Fla",
       description: "Kacang dan Wijen di balut adonan lembut, disiram dengan fla",
-      price: "-",
+      price: "Rp20.000",
       image: "/images/menu_dadar.jpeg",
       alt: "Dadar kacang fla Pisang Ijo Hasanuddin — kacang dan wijen dibalut adonan lembut",
     },
