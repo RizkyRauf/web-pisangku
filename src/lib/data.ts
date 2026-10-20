@@ -80,7 +80,7 @@ export const business: BusinessInfo = {
       name: "Dadar Kacang Fla",
       description: "Kacang dan Wijen di balut adonan lembut, disiram dengan fla",
       price: "Rp23.000",
-      image: "/images/menu_dadar.jpeg",
+      image: "/images/dadar_fla.jpeg",
       alt: "Dadar kacang fla Pisang Ijo Hasanuddin — kacang dan wijen dibalut adonan lembut",
     },
     {

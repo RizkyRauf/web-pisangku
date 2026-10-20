@@ -7,6 +7,7 @@ import Gallery from "@/components/Gallery"
 import Testimonials from "@/components/Testimonials"
 import Location from "@/components/Location"
 import HowToOrder from "@/components/HowToOrder"
+import Payment from "@/components/Payment"
 import Footer from "@/components/Footer"
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Testimonials />
         <Location />
         <HowToOrder />
+        <Payment />
       </main>
       <Footer />
     </>

@@ -58,6 +58,9 @@ export default function Footer() {
                 <a href="#testimoni" className="hover:text-primary transition-colors">Testimoni</a>
               </li>
               <li>
+                <a href="#pembayaran" className="hover:text-primary transition-colors">Pembayaran</a>
+              </li>
+              <li>
                 <a href="#tentang" className="hover:text-primary transition-colors">Tentang Kami</a>
               </li>
             </ul>
