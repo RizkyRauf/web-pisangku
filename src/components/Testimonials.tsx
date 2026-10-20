@@ -6,7 +6,7 @@ function StarRating({ rating }: { rating: number }) {
       {Array.from({ length: 5 }, (_, i) => (
         <svg
           key={i}
-          className={`h-4 w-4 ${i < rating ? "text-accent" : "text-gray-200"}`}
+          className={`h-3.5 w-3.5 ${i < rating ? "text-accent-light" : "text-[#ded5c9]"}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -19,40 +19,50 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function Testimonials() {
   return (
-    <section id="testimoni" className="scroll-mt-16 bg-white px-4 py-20 sm:py-28">
+    <section id="testimoni" className="reveal scroll-mt-16 bg-background px-4 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
-        <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent">Testimoni</p>
-          <h2 className="font-heading mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
-            Kata Pelanggan
-          </h2>
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <span className="inline-flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
+              <span className="h-px w-8 bg-accent" />
+              04 — Testimoni
+            </span>
+            <h2 className="mt-4 text-3xl font-extrabold leading-[1.05] tracking-tighter text-ink sm:text-4xl">
+              Kata pelanggan
+            </h2>
+          </div>
+          {/* <p className="max-w-xs text-sm leading-relaxed text-[#6b5f58] sm:text-right">
+            Cerita langsung dari mereka yang sudah mencoba.
+          </p> */}
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {business.testimonials.length > 0 ? (
             business.testimonials.map((t, i) => (
-              <div
+              <figure
                 key={i}
-                className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1"
+                className="flex flex-col rounded-[1.75rem] border border-black/[0.04] bg-white p-7 transition-transform duration-300 hover:-translate-y-1"
               >
-                <StarRating rating={t.rating} />
-                <p className="mt-4 text-sm leading-relaxed text-gray-600 italic">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div className="mt-6 flex items-center gap-3 border-t border-gray-50 pt-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
+                <div className="flex items-center justify-between">
+                  <StarRating rating={t.rating} />
+                  <span className="font-heading text-4xl leading-none text-accent/20">&ldquo;</span>
+                </div>
+                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-[#4a3d37]">
+                  {t.text}
+                </blockquote>
+                <figcaption className="mt-7 flex items-center gap-3 border-t border-black/5 pt-5">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-ink text-xs font-bold text-white">
                     {t.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-gray-900">{t.name}</p>
-                    <p className="text-xs text-gray-400">{t.source}</p>
+                    <p className="text-sm font-bold text-ink">{t.name}</p>
+                    <p className="text-[11px] uppercase tracking-[0.1em] text-[#8a7d74]">{t.source}</p>
                   </div>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
             ))
           ) : (
-            <p className="col-span-full text-center text-gray-400 italic">
-              {/* TODO: isi testimoni asli */}
+            <p className="col-span-full text-center italic text-[#8a7d74]">
               Belum ada testimoni
             </p>
           )}

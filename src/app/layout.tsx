@@ -1,17 +1,13 @@
 import type { Metadata, Viewport } from "next"
-import { Outfit, Playfair_Display } from "next/font/google"
+import { Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
 import { localBusinessSchema, breadcrumbSchema } from "@/lib/schema"
 import { business } from "@/lib/data"
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
-})
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
+  display: "swap",
 })
 
 const siteUrl = process.env.NEXT_PUBLIC_DOMAIN
@@ -67,7 +63,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#166534",
+  themeColor: "#101A13",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -75,7 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const breadcrumbLd = breadcrumbSchema()
 
   return (
-    <html lang="id" className={`${outfit.variable} ${playfair.variable} h-full scroll-smooth`}>
+    <html lang="id" className={`${jakarta.variable} h-full scroll-smooth`}>
       <head>
         <script
           type="application/ld+json"
@@ -85,10 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
         />
-        <meta
-          name="google-site-verification"
-          content="googleac25364782827d66"
-        />
+        <meta name="google-site-verification" content="googleac25364782827d66" />
       </head>
       <body className="min-h-full flex flex-col font-sans antialiased">{children}</body>
     </html>

@@ -21,9 +21,9 @@ export default function Home() {
         <Menu />
         <Gallery />
         <Testimonials />
-        <Location />
         <HowToOrder />
         <Payment />
+        <Location />
       </main>
       <Footer />
     </>

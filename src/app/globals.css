@@ -1,19 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0c0c0c;
-  --primary: #166534;
-  --primary-dark: #14532d;
-  --primary-light: #22c55e;
-  --accent: #d97706;
-  --accent-light: #f59e0b;
-  --muted: #f8fafc;
-  --muted-foreground: #64748b;
-  --border: #e2e8f0;
-  --card: #ffffff;
-  --card-foreground: #0c0c0c;
-  --radius: 0.75rem;
+  --background: #faf7f0;
+  --foreground: #1e2a22;
+  --primary: #274734;
+  --primary-dark: #16301f;
+  --primary-light: #557b60;
+  --accent: #7f5c33;
+  --accent-light: #c0a46e;
+  --sand: #f1ede1;
+  --ink: #101a13;
+  --muted: #f8f5ef;
+  --muted-foreground: #6a7468;
+  --border: #e4dfd2;
 }
 
 @theme inline {
@@ -24,19 +23,19 @@
   --color-primary-light: var(--primary-light);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --font-sans: var(--font-outfit), sans-serif;
-  --font-heading: var(--font-playfair), serif;
-  --radius: var(--radius);
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -44,7 +43,7 @@ html {
 }
 
 ::selection {
-  background-color: #166534;
+  background-color: var(--primary);
   color: white;
 }
 
@@ -58,39 +57,40 @@ html {
 }
 
 .animate-marquee {
-  animation: marquee 30s linear infinite;
+  animation: marquee 32s linear infinite;
 }
 
 .animate-marquee:hover {
   animation-play-state: paused;
 }
 
-@keyframes fade-in-up {
+@keyframes reveal-up {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(28px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
-}
-
-@keyframes counter {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal-up both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 28%;
   }
 }
 
-.animate-counter {
-  animation: counter 0.4s ease-out forwards;
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+  .animate-marquee {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
